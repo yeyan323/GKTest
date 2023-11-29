@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "Cherry";
+    src: url(./CherryUnicode/Cherry_Unicode.ttf);
+}
+
+@font-face {
+    font-family: "Taungyi";
+    src: url(./MyanmarTaungyi/MyanmarTaungyi.ttf);
+}
+
+@font-face {
+    font-family: "Gantgaw";
+    src: url(./Gantgaw/Gantgaw-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Jasmine";
+    src: url(./JasmineUnicode/Jasmine_Unicode.ttf);
+}
+
+@font-face {
+    font-family: "Kt2";
+    src: url(./KT_Unicode/KT_02.ttf);
+}
+@font-face {
+    font-family: "Kt3";
+    src: url(./KT_Unicode/KT_03.ttf);
+}
+@font-face {
+    font-family: "MasterpieceUniRound";
+    src: url(./MasterpieceUniRound/MasterpieceUniRound.ttf);
+}
+
+@font-face {
+    font-family: "pyidaungsuNum";
+    src: url(./PyidaungsuNum/Pyidaungsu-1.8.3_Numbers.ttf);
+}
+
+@font-face {
+    font-family: "mon";
+    src: url(./MON3_Anonta/MON3Anonta1.ttf);
+}
+
+@font-face {
+    font-family: "myanmar3";
+    src: url(./Myanmar3/mm3_05-Jan-2011.ttf);
+}
+
+@font-face {
+    font-family: "myanmar3pa";
+    src: url(./Myanmar3_PaOh/MM3_Paoh.ttf);
+}
+
+@font-face {
+    font-family: "myanmarAng";
+    src: url(./MyanmarAngoun/MyanmarAngoun.ttf);
+}
+
+@font-face {
+    font-family: "myanmarblack";
+    src: url(./MyanmarBlack/MyanmarBlack.ttf);
+}
+
+@font-face {
+    font-family: "myanmarcensus";
+    src: url(./MyanmarCensus/myanmarcensus.ttf);
+}
+@font-face {
+    font-family: "myanmargantgaw";
+    src: url(./MyanmarGantGaw/MyanmarGantGaw.ttf);
+}
+@font-face {
+    font-family: "myanmarkhway";
+    src: url(./MyanmarKhway/MyanmarKhway.ttf);
+}
+@font-face {
+    font-family: "myanmarkuttar";
+    src: url(./MyanmarKuttar/MyanmarKuttar.ttf);
+}
+@font-face {
+    font-family: "myanmarnay";
+    src: url(./MyanmarNayone/MyanmarNayone.ttf);
+}
+@font-face {
+    font-family: "myanmarnj";
+    src: url(./MyanmarNjaun/MyanmarNjaun.ttf);
+}
+@font-face {
+    font-family: "myanmarpaoh";
+    src: url(./MyanmarPaOhOne/MyanmarPaOhOne.ttf)
+}
+@font-face {
+    font-family: "myanmarpaohrose";
+    src: url(./MyanmarPaOhRosemary/MIUI\ Unicode.ttf)
+}
+@font-face {
+    font-family: "myanmarpauk";
+    src: url(./MyanmarPauklay/MyanmarPauklay.ttf)
+}
+@font-face {
+    font-family: "myanmarphet";
+    src: url(./MyanmarPhetsot/MyanmarPhetsot.ttf)
+}
+@font-face {
+    font-family: "myanmarpix";
+    src: url(./MyanmarPixel/MyanmarPixel.ttf);
+}
+@font-face {
+    font-family: "myanmarponenyet";
+    src: url(./MyanmarPonenyet/MyanmarPonenyet.ttf);
+}
+@font-face {
+    font-family: "myanmarpunk";
+    src: url(./MyanmarPunk/Myanmar_Punk.ttf);
+}
+@font-face {
+    font-family: "myanmarrose";
+    src: url(./MyanmarRosemarry/Myanmar_Rosemarry.ttf);
+}
+@font-face {
+    font-family: "myanmarsabae";
+    src: url(./MyanmarSabae/MyanmarSabae.ttf);
+}
+@font-face {
+    font-family: "myanmarsagar";
+    src: url(./MyanmarSagar/MyanmarSagar.ttf);
+}
+@font-face {
+    font-family: "myanmarsanspro";
+    src: url(./MyanmarSansPro/MyanmarSansPro.ttf);
+}
+@font-face {
+    font-family: "myanmarsquare";
+    src: url(./MyanmarSquare/MyanmarSquare.ttf);
+}
+@font-face {
+    font-family: "myanmartagu";
+    src: url(./MyanmarTagu/MyanmarTagu.ttf);
+}
+@font-face {
+    font-family: "myanmartext";
+    src: url(./MyanmarText/mmrtext.ttf);
+}
+@font-face {
+    font-family: "myanmartextmelano";
+    src: url(./MyanmarTextMelano/MyanmarTextMelano.ttf);
+}
+@font-face {
+    font-family: "myanmarthuriya";
+    src: url(./MyanmarThuriya/MyanmarThuriya.ttf);
+}
+@font-face {
+    font-family: "myanmaryinmar";
+    src: url(./MyanmarYinmar/MyanmarYinmar.ttf);
+}
+@font-face {
+    font-family: "Namkhon_Web_pro";
+    src: url(./Namkhon/Namkhon_Web_pro.ttf);
+}
+@font-face {
+    font-family: "notosans";
+    src: url(./NotoSansMyanmar/Notosan\ Myanmar\ UI\ Bold.ttf);
+}
+@font-face {
+    font-family: "padauk";
+    src: url(./Padauk/Padauk-Zawgyi.ttf);
+}
+@font-face {
+    font-family: "padaukG";
+    src: url(./PadaukGhost/PadaukGhostтАЛ.ttf);
+}
+@font-face {
+    font-family: "padaukGp";
+    src: url(./PadaukGrandPro/PadaukGrandPro\ v2.ttf);
+}
+@font-face {
+    font-family: "padauky";
+    src: url(./PadaukKyaungchikote/Padauk\ Kyaungchikote.ttf);
+}
+@font-face {
+    font-family: "padausg";
+    src: url(./PadaukSagar/PadaukSagar.ttf);
+}
+@font-face {
+    font-family: "padausgw";
+    src: url(./PadaukSgaw/PadaukSgaw.ttf);
+}
+@font-face {
+    font-family: "panlong";
+    src: url(./PangLong/PangLong_2011feb7.ttf);
+}
+@font-face {
+    font-family: "paohdragon";
+    src: url(./PaohDragonApp/PaohDragonApp.ttf);
+}
+@font-face {
+    font-family: "parabaik";
+    src: url(./Parabaik/Parabaik_UTN11-3.ttf);
+}
+@font-face {
+    font-family: "pyidaungsu";
+    src: url(./Pyidaungsu/pyidaungsu-1.3.ttf);
+}
+@font-face {
+    font-family: "samsung";
+    src: url(./SamsungMyanmar/Samsung\ Myanmar.ttf);
+}
+@font-face {
+    font-family: "samsung";
+    src: url(./SamsungMyanmar/Samsung\ Myanmar.ttf);
+}
+@font-face {
+    font-family: "shan";
+    src: url(./ShanUnicode/Shan\ Unicode.ttf);
+}
+@font-face {
+    font-family: "thanlwin";
+    src: url(./Thanlwin/ThanLwin.ttf);
+}
+@font-face {
+    font-family: "tharlon";
+    src: url(./Tharlon/TharLon.ttf);
+}
+@font-face {
+    font-family: "winuni";
+    src: url(./WinUniInnwa/WinUniInnwa.ttf);
+}
+@font-face {
+    font-family: "yoyarbold";
+    src: url(./YoeYarOne/YoeYar-One\ Bold.ttf);
+}
+@font-face {
+    font-family: "yoyarRegular";
+    src: url(./YoeYarOne/YoeYar-One\ Regular.ttf);
+}
+@font-face {
+    font-family: "yoyarlight";
+    src: url(./YoeYarOne/YoeYar-One\ Light.ttf);
+}
+@font-face {
+    font-family: "yunghkio";
+    src: url(./Yunghkio/Yunghkio.ttf);
+}
+
+
+
+/* col-lg-3 col-md-6 col-12
+col-lg-3 col-md-6 col-12
+col-lg-3 col-md-6 col-12
+col-lg-3 col-md-6 col-12 */

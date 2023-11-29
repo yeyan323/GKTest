@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./unicode fonts/UnicodeFont.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<style>
+  *{
+    font-family: myanmar3;
+    font-weight: bold;
+  }
+    .form-check::before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: .3em;
+        background-color: orangered;
+    }    
+
+    label{
+        cursor: pointer;
+    }
+    h6{
+      cursor: pointer;
+    }
+
+    #flexRadioDefault1:checked ~ #rd1,
+    #flexRadioDefault2:checked ~ #rd2,
+    #flexRadioDefault3:checked ~ #rd3,
+    #flexRadioDefault4:checked ~ #rd4{
+        background-color: orangered;
+    }   
+    
+    .f-color{
+      color: #023047 !important;
+    }
+    .f-color2{
+      color: #ff5400 !important;
+    }
+    .bg-color{
+      background-color: #ff5400 !important;
+    }
+    .border-color{
+      border-color: #ff44007a !important;
+    }
+    .btn-custom{
+      background-color: #023047 !important;
+      color: #fff !important;
+    }
+
+    .bg-img{
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+
+
+</style>
+<body class="bg-body-secondary min-vh-100 w-100  d-flex position-relative">
+  <div class="w-100 h-100 position-fixed bg-light bg-opacity-10 top-0 left-0 object-fit-cover z-0" style="backdrop-filter: blur(2px);"></div>
+  <img src="./IMG_4212.JPG" class="bg-img col-12 h-100 position-fixed top-0 left-0 object-fit-cover p-0 m-0" alt="">
+
+    <div class="container-fluid w-100 d-flex m-auto align-items-center p-3">
+      <!-- login form code -->
+      <div class="container m-auto p-0 " id="loginpg">
+        <div class="card m-auto col-md-7 row-gap-3 p-3 border-0" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+          <div class="form-floating" id="user">
+            <input type="text" class="form-control" id="userinput" placeholder="Username">
+            <label for="userinput">Username</label>
+          </div>
+          <div class="invalid-feedback">
+            Please enter a username.
+          </div>
+          <!-- <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div> -->
+          <button class="btn btn-dark p-2" id="log">Login</button>
+        </div>
+      </div>
+      
+      <!-- quiz form code -->
+      <div class="container m-auto d-none p-0" id="quizpg">
+        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm mb-3">
+          <div class="row d-flex ">
+            <div class="stn col border-end border-2 border-color f-color ">
+              <h6 class="fw-bold">ဖြေဆိုသူအမည်</h6>
+              <h6 class="username m-0 fw-bold">Mg Mg</h6>
+            </div>
+            <div class="hs col-5 text-end f-color">
+              <h6 class="fw-bold">ရမှတ်</h6>
+              <h6 id="mk" class=" m-0 fw-bold">0 Mark</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm">
+              <div class="p-3 m-0 rounded bg-body-secondary border-opacity-10" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+                <h6 class="card p-3 lh-lg fw-bold f-color border-0 bg-warning-subtle" id="quiz" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">Which animal has four legs?</h6>
+                <div class="quizbox gap-3 border-0 my-3">
+                    <div class="row w-100 m-auto gap-3">
+                        <div class="form-check border-0 position-relative overflow-hidden card col-12 d-flex flex-row p-0 align-items-center justify-content-start" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+                            <!-- <label class="form-check-label p-3 d-flex align-items-center justify-content-between w-100" for="flexRadioDefault1">
+                                <input onclick="optcheck(flexRadioDefault1)" class="form-check-input d-none m-0 me-2" value="vu1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                Chicken
+                                <div class="radio-custom d-flex p-1 border border-2 rounded-circle" style="width: 1.3em;height: 1.3em;" id="rd1">
+                                <div class="radio-inner w-100 h-100 bg-light rounded-circle m-auto" id="inner_radio"></div>    
+                                </div>
+                            </label> -->
+                          </div>
+                          <div class="form-check border-0 position-relative overflow-hidden card col-12 d-flex flex-row p-0 align-items-center justify-content-start" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+                              <!-- <label class="form-check-label p-3 d-flex align-items-center justify-content-between w-100" for="flexRadioDefault2">
+                                <input class="form-check-input d-none m-0 me-2" value="vu1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                              Bat
+                              <div class="radio-custom d-flex p-1 border border-2 rounded-circle" style="width: 1.3em;height: 1.3em;" id="rd2">
+                                <div class="radio-inner w-100 h-100 bg-light rounded-circle m-auto" id="inner_radio"></div>
+                              </div>
+                            </label> -->
+                          </div>
+                          <div class="form-check border-0 position-relative overflow-hidden p-0 card col-12 d-flex flex-row align-items-center justify-content-start" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+                            <!-- <label class="form-check-label d-flex p-3 align-items-center justify-content-between w-100 h-100" for="flexRadioDefault3">
+                                <input class="form-check-input d-none m-0 me-2" value="vu1" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                Goat
+                                <div class="radio-custom d-flex p-1 border border-2 rounded-circle" style="width: 1.3em;height: 1.3em;" id="rd3">
+                                <div class="radio-inner w-100 h-100 bg-light rounded-circle m-auto" id="inner_radio"></div>    
+                                </div>
+                            </label> -->
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="row w-100 m-auto align-items-center">
+                  <div class="col-7 d-flex p-0 pe-1 m-0">
+                    <button class="rounded-2 col-12 btn btn-custom border-0 m-0" style="line-height: 2.5em;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"  id="sbbtn">Submit</button>
+                  </div>
+                  <div class="col d-flex p-0 ps-1 m-0">
+                    <button class="btn col-12 bg-color text-light border-0 m-0" style="line-height: 2.5em;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"  id="nexbtn">Next</button>
+                  </div>
+                </div>
+              </div>
+              
+              
+        </div>
+
+      </div>
+
+      <!-- result form code -->
+      <div class="card col-12 col-md-5 overflow-hidden m-auto p-4 row-gap-3 d-none" id="resultpg">
+          <div class="row mx-auto">
+            <img src="./18399 [Converted]-01.jpg" alt="" class="w-100" style="max-width: 21em ;">
+          </div>
+          <div class="row mx-auto">
+              <h5 class="f-color fw-bold text-center fs-2">Congratulations! <span class="username"></span></h5>
+              <h5 class="f-color2 fw-bold text-center fs-2">Your Winner</h5>
+              <p class="text-center f-color fw-bold fs-5">ဆုလက်ခံရယူပေးပါ။</p>
+              <button class="btn btn-custom p-2 m-0" onclick="restart()">OK</button>
+          </div>
+      </div>
+
+      <!-- try again form -->
+      <div class="card col-12 col-md-5 overflow-hidden m-auto p-4 row-gap-3 d-none" id="tryagain">
+          <div class="row mx-auto">
+            <img src="./1601.m00.i125.n009.p.c25.231615226 game over message in vector cartoon style.jpg" alt="" class="w-100" style="max-width: 21em ;">
+          </div>
+          <div class="row mx-auto">
+              <h5 class="f-color2 fw-bold text-center fs-2">Game Over <span class="username"></span></h5>
+              <p class="text-center f-color fw-bold fs-5">ဖြေဆိုမှုမအောင်မြင်ပါ။</p>
+              <button class="btn btn-custom p-2 m-0" onclick="restart()">OK</button>
+          </div>
+      </div>
+      
+
+    </div>
+    
+
+
+    
+</body>
+<script src="./quizarr.js"></script>
+<script src="./quiz.js"></script>
+</html>
