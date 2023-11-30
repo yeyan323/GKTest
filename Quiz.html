@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./unicode fonts/UnicodeFont.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./aos/dist/aos.css">
     <title>Document</title>
 </head>
 
@@ -71,25 +72,46 @@
     <div class="container-fluid w-100 d-flex m-auto align-items-center p-3">
       <!-- login form code -->
       <div class="container m-auto p-0 " id="loginpg">
-        <div class="card m-auto col-md-7 row-gap-3 p-3 border-0" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-          <div class="form-floating" id="user">
-            <input type="text" class="form-control" id="userinput" placeholder="Username">
-            <label for="userinput">Username</label>
+        <div class="card flex-lg-row flex-column-reverse m-auto col-md-9 row-gap-3 p-2 border-0"
+        data-aos="zoom-in-down" data-aos-easing="ease-in-sine" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+          <div class="col-lg p-lg-3 p-2">
+            <h5 class="p-0 mx-0 f-color2 fw-semibold" data-aos="fade-right"
+            data-aos-delay="500">လမ်းညွှန်ချက်</h5>
+            <ul class="m-0">
+              <li class="lh-lg f-color" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-delay="900">မေးခွန်းများဖြေဆိုရန် username ကိုဖြည့်သွင်းရပါမည်။</li>
+              <li class="lh-lg f-color" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-delay="1100">မေးခွန်းတစ်ခုစီအတွက် အဖြေတစ်ခုကိုသာရွေးချယ်၍ Submit button ကိုနှိပ်ပေးရမှာဖြစ်ပါသည်။</li>
+              <li class="lh-lg f-color" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-delay="1400" data-aos-offset="0">နောက်မေးခွန်းတစ်ခုကိုဖြေဆိုရန် Next Button ကိုနှိပ်၍ ဖြေဆိုရပါမည်။</li>
+              <li class="lh-lg f-color" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-delay="1600" data-aos-offset="0" data-aos-anchor-placement="top-bottom">မေးခွန်း ၂ ခုစလုံးမှန်ကန်လျှင် ဆုလက်ခံရရှိမည်ဖြစ်ပါသည်။</li>
+            </ul>
+            
+        </div>  
+        <div class="col-lg-6 p-lg-3 p-2">
+              <img src="./IMG_4212.JPG" class="w-100" alt="">
+              <div class="row mx-auto p-0 m-0 row-gap-3">
+                <div class="form-floating p-0 m-0" id="user">
+                  <input type="text" class="form-control shadow-sm" id="userinput" placeholder="Username">
+                  <label for="userinput">Username</label>
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a username.
+                </div>
+                <!-- <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div> -->
+                <button class="btn btn-custom p-2 col-12" id="log">Login</button>
+              </div>
+              
           </div>
-          <div class="invalid-feedback">
-            Please enter a username.
-          </div>
-          <!-- <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div> -->
-          <button class="btn btn-dark p-2" id="log">Login</button>
+          
+
+          
         </div>
       </div>
       
       <!-- quiz form code -->
       <div class="container m-auto d-none p-0" id="quizpg">
-        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm mb-3">
+        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm mb-3" id="usnamcard">
           <div class="row d-flex ">
             <div class="stn col border-end border-2 border-color f-color ">
               <h6 class="fw-bold">ဖြေဆိုသူအမည်</h6>
@@ -101,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm">
+        <div class="card col-md-8 col-lg-6 p-3 m-auto border-0 shadow-sm" id="quizcontainer">
               <div class="p-3 m-0 rounded bg-body-secondary border-opacity-10" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
                 <h6 class="card p-3 lh-lg fw-bold f-color border-0 bg-warning-subtle" id="quiz" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">Which animal has four legs?</h6>
                 <div class="quizbox gap-3 border-0 my-3">
@@ -176,6 +198,10 @@
           </div>
       </div>
       
+      <audio src="./CORRECT ANSWER SOUND EFFECT - NO COPYRIGHT 00_00_01-.mp3" class="aud" id="correctsong"></audio>
+      <audio src="./Wrong Answer Sound effect 00_00_01-.mp3" class="aud" id="wrongsong"></audio>
+      <audio src="./SUPER MARIO - game over - sound effect.mp4" class="aud" id="gameoversong"></audio>
+      <audio src="./Cheering sound effect free copyright 00_00_01-.mp3" class="aud" id="cheersong"></audio>
 
     </div>
     
@@ -185,4 +211,8 @@
 </body>
 <script src="./quizarr.js"></script>
 <script src="./quiz.js"></script>
+<script src="./aos/dist/aos.js"></script>p
+<script>
+  AOS.init();
+</script>
 </html>

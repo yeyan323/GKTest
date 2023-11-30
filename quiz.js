@@ -1,3 +1,5 @@
+// import { AOS } from "aos";
+
 const ques = document.getElementById("quiz");
 const opt = document.querySelectorAll(".form-check");
 // const optradio = document.querySelectorAll(".form-check-input");
@@ -17,6 +19,13 @@ const tryagain = document.getElementById("tryagain");
 const login = document.getElementById("log");
 const finput = document.getElementById("userinput");
 const usr = document.getElementById("user");
+const correctsong = document.getElementById("correctsong");
+const wrongsong = document.getElementById("wrongsong");
+const gameoversong = document.getElementById("gameoversong");
+const cheersong = document.getElementById("cheersong");
+const aud = document.querySelectorAll(".aud");
+
+
 
 
 function optcheck(){
@@ -94,7 +103,6 @@ sbm.onclick = function (){
                 rdbt.classList.remove("border");
                 rdbt.classList.add("bg-success");   
                 
-                
         }        
            
 
@@ -114,11 +122,12 @@ sbm.onclick = function (){
                     iconwrong.classList.remove("d-none");
                     rdbt.classList.remove("border")
                     rdbt.classList.add("bg-danger");   
-                        
+                    wrongsong.play();
                     // console.log("Your mark is " + stumark);
                 }
                 else{
                     points++;
+                     correctsong.play();
                 }
             }
             
@@ -165,22 +174,38 @@ console.log(showque(quiznum));
 nex.onclick = () => {
     quiznum++;
 
+    aud.forEach(element => {
+       element.load(); 
+    });
+
     console.log(quiznum)
    if(quiznum < selectedQuestions.length){
         showque(quiznum)
+        
    }
    else{
        quizform.classList.add("d-none");
        if(points == 2){
            resultform.classList.remove("d-none");
+           resultform.setAttribute("data-aos","fade-up")
+           cheersong.play();
        }
        else{
             tryagain.classList.remove("d-none");
+            tryagain.setAttribute("data-aos","fade-right");
+            tryagain.setAttribute("data-aos-duration","1500");
+            gameoversong.play();
        }
    }
+   AOS.init({
+    startEvent: 'click',
+    easing: 'ease-in-out'
+  });
 }
 
 const usrnam = document.querySelectorAll(".username");
+const usnamcard = document.getElementById("usnamcard")
+const quizcontainer = document.getElementById("quizcontainer")
 
 login.onclick = () => {
     if(finput.value == ""){
@@ -191,12 +216,20 @@ login.onclick = () => {
         usr.classList.remove("is-invalid");
         loginform.classList.add("d-none");
         quizform.classList.remove("d-none");
+        usnamcard.setAttribute("data-aos","fade-right")
+        usnamcard.setAttribute("data-aos-duration","1000")
+        quizcontainer.setAttribute("data-aos","fade-left")
+        quizcontainer.setAttribute("data-aos-duration","1000")
 
         usrnam.forEach(element => {
             element.innerHTML=finput.value;
         });
     }
 
+    AOS.init({
+        startEvent: 'click',
+        easing: 'ease-in-out'
+      });
 
 }
 
